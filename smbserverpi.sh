@@ -38,7 +38,7 @@ echo "Do you want to format drive? (Ereases all data)"
 read -p "Share drive or wipe and format?" DRIVEFORMAT
 
 case $DRIVEFORMAT in
-	1) echo "Skipping format of disk"
+	1) echo "Skipping format of disk" ;;
 	2) mkfs.ext4 /dev/${DRIVE1} ;;
 esac
 
