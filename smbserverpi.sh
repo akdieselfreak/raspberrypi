@@ -109,6 +109,6 @@ case $DEDICATEDIP in
     2) echo "Ok We are done here! Your Share is up and running!";;
 esac
 
-
+exit
 
 
