@@ -96,10 +96,8 @@ sudo smbpasswd -a $SMBPASSWD
 
 
 #Set dedicated IP address for yoru raspberry PI
-#echo "1 - Yes Please use dedicated IP"
-#echo "2 - No Ill do this later"
+echo "Do you want to setup your raspberry pi with a dedicated IP address?"
+echo "1 - Yes Please use dedicated IP"
+echo "2 - No Ill do this later"
 
 exit
-
-
-
