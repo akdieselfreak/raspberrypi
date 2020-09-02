@@ -96,19 +96,10 @@ sudo smbpasswd -a $SMBPASSWD
 
 
 #Set dedicated IP address for yoru raspberry PI
-echo "Do you want to setup your raspberry pi with a dedicated IP address?"
-echo "1 - Yes Please use dedicated IP"
-echo "2 - No Ill do this later"
-
-read -p DEDICATEDIP
-
-case $DEDICATEDIP in
-	1) DEDICATEDIP=$(hostname -I)
-    echo >> $DEDICATEDIP /etc/dhcpcd.conf
-	echo "We are done here! You should be able to use the share now" ;;
-    2) echo "Ok We are done here! Your Share is up and running!";;
-esac
+#echo "1 - Yes Please use dedicated IP"
+#echo "2 - No Ill do this later"
 
 exit
+
 
 
