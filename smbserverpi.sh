@@ -67,7 +67,9 @@ sudo mount /dev/${DRIVE1} ${HOMEDIR}/${FSHARENAME}
 echo "writing important stuff to smb.conf file"
 sleep 3
 
-sudo sh -c echo "[$FSHARENAME]
+sudo su
+
+sudo echo "[$FSHARENAME]
   comment = $FSHARENAME 
   path = ${HOMEDIR}/${FSHARENAME}
   browseable = yes
